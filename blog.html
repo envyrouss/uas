@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - The Journey of Averoes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0f0f13;
+            color: #f4f4f9;
+            overflow-x: hidden;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 50px 20px;
+            background: url('kotamalam.webp') center/cover no-repeat;
+            background-size: cover;
+            height: 500px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            background: #1f1f29;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #f4f4f9;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px 20px;
+        }
+        .main-content {
+            flex: 3;
+            background: #1f1f29;
+            padding: 30px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #2a2a36;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .post {
+            background: #2a2a36;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .post h2 {
+            font-size: 2.5rem;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        .post p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #f4f4f9;
+        }
+        .post a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            transition: color 0.3s;
+        }
+        .post a:hover {
+            color: #fff;
+        }
+        .extra-content {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #f4f4f9;
+        }
+        .sidebar h3 {
+            color: #ffcc00;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        .sidebar ul li a {
+            color: #f4f4f9;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .sidebar ul li a:hover {
+            color: #ffcc00;
+        }
+        footer {
+            background: #1f1f29;
+            text-align: center;
+            padding: 20px;
+            color: #f4f4f9;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+   <nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Header Section -->
+    <header>
+        <h1>The Journey of Averoes</h1>
+        <p>Exploring limitless worlds, one step at a time.</p>
+    </header>
+
+    <!-- Main Content and Sidebar -->
+    <div class="content">
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <div class="post">
+                <h2>Averoes: Menyusuri Dunia Tanpa Batas</h2>
+                <p>Averoes, seorang pemuda penuh semangat dengan jiwa petualang yang tak pernah merasa cukup dengan apa yang ada di sekitarnya. Sejak kecil, ia sudah terbiasa dengan hiruk-pikuk kota dan kegelisahan dunia modern yang serba cepat. Namun, di balik kesibukannya, ada sisi dirinya yang sangat mencintai hal-hal sederhana dan penuh makna. Ia percaya bahwa untuk benar-benar memahami dunia, seseorang harus melibatkan diri dalam beragam pengalaman, mengeksplorasi berbagai hal yang tak terduga.</p>
+                <a href="javascript:void(0);" onclick="toggleContent('extra1')">Read More</a>
+                <div id="extra1" class="extra-content">
+                    <p>Sejak kecil, Averoes telah terbiasa dengan kebisingan kota dan kehidupan yang serba cepat. Tetapi hatinya selalu tertarik pada hal-hal yang lebih sederhana, yang memberi makna mendalam. Dia percaya bahwa untuk benar-benar memahami dunia, seseorang harus mengeksplorasi banyak pengalaman dan hal-hal yang tak terduga. Dunia otomotif, fotografi, seni, kuliner, dan teknologi, semuanya menjadi bagian dari perjalanan hidupnya yang penuh warna.</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>Menyelami Dunia Otomotif Klasik</h2>
+                <p>Salah satu dunia yang paling memikat hati Averoes adalah dunia otomotif, khususnya motor klasik. Ia terpesona dengan sejarah, desain, dan keunikan setiap motor tua yang memiliki cerita di baliknya. Berawal dari sebuah motor tua yang ia temukan di garasi rumah kakeknya, Averoes mulai menyelami dunia restorasi motor klasik.</p>
+                <a href="javascript:void(0);" onclick="toggleContent('extra2')">Read More</a>
+                <div id="extra2" class="extra-content">
+                    <p>Bagi Averoes, motor klasik bukan hanya soal keindahan desain, tetapi juga tentang cerita yang terkandung di dalamnya. Motor pertama yang ia restorasi adalah sebuah Yamaha RX-King tahun 1980-an. Ia menghabiskan berbulan-bulan untuk mencari suku cadang yang langka dan mengembalikan motor itu ke kondisi terbaiknya. Ketika akhirnya ia menyalakan motor tersebut, rasa bangga yang ia rasakan lebih dari sekadar kesuksesan teknis—itu adalah kemenangan atas ketekunan dan kecintaannya terhadap sejarah.</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>Menyusuri Alam dan Menyelami Dunia Lainnya</h2>
+                <p>Namun, dunia otomotif hanyalah salah satu dari banyak dunia yang ingin dijelajahi Averoes. Semangatnya untuk terus mengeksplorasi membuatnya terjun ke banyak hobi lainnya, seperti fotografi dan seni lukis.</p>
+                <a href="javascript:void(0);" onclick="toggleContent('extra3')">Read More</a>
+                <div id="extra3" class="extra-content">
+                    <p>Dengan kamera tua milik ayahnya, Averoes mulai menangkap gambar-gambar indah dari alam sekitar, mengabadikan momen yang jarang diperhatikan orang lain. Ia menemukan kedamaian dan kebahagiaan dalam setiap jepretan, mulai dari pemandangan alam yang tenang hingga kesibukan kota yang tak pernah tidur. Selain itu, ia juga mulai menggambar potret diri dan lanskap dengan sentuhan warna yang berbeda, belajar tentang ekspresi diri melalui seni.</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <h2>Perjalanan ke Dunia Baru</h2>
+                <p>Averoes tidak hanya berhenti di dunia otomotif atau seni. Semangat eksplorasi membawanya ke dunia kuliner dan teknologi, di mana ia menemukan hal-hal baru yang terus memperkaya pengalamannya.</p>
+                <a href="javascript:void(0);" onclick="toggleContent('extra4')">Read More</a>
+                <div id="extra4" class="extra-content">
+                    <p>Dengan kecintaan pada kuliner, Averoes mulai mencicipi makanan khas dari berbagai daerah dan negara, serta belajar cara memasak masakan tradisional dari nenek moyangnya. Di dunia teknologi, Averoes yang memiliki latar belakang pendidikan di bidang teknologi informasi mulai mendalami kecerdasan buatan, pengembangan aplikasi, dan robotika. Ia merancang aplikasi yang menggabungkan minatnya dalam otomotif dengan teknologi, seperti aplikasi untuk membantu penggemar motor klasik menemukan sparepart langka.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Journey Insights</a></li>
+                <li><a href="#">Personal Growth</a></li>
+                <li><a href="#">Milestones</a></li>
+                <li><a href="#">Challenges & Triumphs</a></li>
+            </ul>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Averoes: Menyusuri Dunia Tanpa Batas</a></li>
+                <li><a href="#">Menyelami Dunia Otomotif Klasik</a></li>
+                <li><a href="#">Menyusuri Alam dan Menyelami Dunia Lainnya</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Add Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 The Journey of Averoes. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/averoes_fsha/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+</footer>
+
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

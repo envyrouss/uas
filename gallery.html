@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Journey of Averoes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0f0f13;
+            color: #f4f4f9;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 100px 20px;
+            background: url('header-background.jpg') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+        header h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.8rem;
+            margin-top: 20px;
+            font-weight: lighter;
+        }
+        nav {
+            background: rgba(31, 31, 41, 0.9);
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f4f4f9;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+            background: #1f1f29;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+        }
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 20px;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .gallery-item:hover img,
+        .gallery-item:hover video {
+            opacity: 0.85;
+            transform: scale(1.1);
+        }
+        .gallery-item h3 {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background: #1f1f29;
+            text-align: center;
+            padding: 30px;
+            color: #f4f4f9;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons i {
+            margin: 0 15px;
+            font-size: 2rem;
+            transition: transform 0.3s;
+        }
+        .social-icons i:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Gallery - The Journey of Averoes</h1>
+        <p>Explore the visual journey of Averoes through these beautiful moments captured.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <!-- Images -->
+        <div class="gallery-item">
+            <img src="yohohoho.jpeg" alt="Image 1">
+            <h3>Moment 1</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="envyproud.jpeg" alt="Image 2">
+            <h3>Moment 2</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="envymecanic.jpeg" alt="Image 3">
+            <h3>Moment 3</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="UNPAM_logo1.png" alt="Image 4">
+            <h3>Moment 4</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="envyfire.jpeg" alt="Image 5">
+            <h3>Moment 5</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="envy&bryan.jpeg" alt="Image 6">
+            <h3>Moment 6</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="envyperson.jpeg" alt="Image 7">
+            <h3>Moment 7</h3>
+        </div>
+        <div class="gallery-item">
+            <img src="envy&pipi.jpeg" alt="Image 8">
+            <h3>Moment 8</h3>
+        </div>
+
+        <!-- Videos -->
+        <div class="gallery-item">
+            <video controls>
+                <source src="ironwolfy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Video 1</h3>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="ridingEnvy&Pipi.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Video 2</h3>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="batikridingEnvy&Pipi.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Video 3</h3>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="storyofenvy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Video 4</h3>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 The Journey of Averoes. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/averoes_fsha/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
