@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey of Averoes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Adding Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0f0f13;
+            color: #f4f4f9;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        header .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('kotajalanmalam.jpg') center/cover no-repeat;
+            z-index: 1;
+            opacity: 0.7;
+        }
+        nav {
+            background: #1f1f29;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f4f4f9;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .audio-controls {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .audio-controls button {
+            background-color: #ffcc00;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .audio-controls button:hover {
+            background-color: #f4f4f9;
+            color: #1f1f29;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+        .card {
+            background: #1f1f29;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            color: #ffcc00;
+        }
+        .card p {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+        footer {
+            background: #1f1f29;
+            text-align: center;
+            padding: 20px;
+            color: #f4f4f9;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Audio Controls Section -->
+    <div class="audio-controls">
+        <button onclick="playAudio()">Klik untuk Mendengarkan Musik</button>
+        <button onclick="pauseAudio()">Pause Musik</button> <!-- Added pause button -->
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audio" loop>
+        <source src="Arctic_Monkeys_-_Do_I_Wanna_Know__(getmp3.pro).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Function to play audio
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        }
+
+        // Function to pause audio
+        function pauseAudio() {
+            var audio = document.getElementById('audio');
+            audio.pause();
+        }
+    </script>
+
+    <!-- Header Section -->
+    <header>
+        <div class="background"></div>
+        <h1>The Journey of Averoes</h1>
+        <p>Menginspirasi dunia melalui perjalanan dan kisah hidup.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Perjalanan yang Mengubah Dunia</h2>
+        <p>Bergabunglah dengan saya dalam eksplorasi tak terbatas tentang kehidupan dan inspirasi.</p>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards">
+        <div class="card">
+            <h3>Bab 1: Awal Perjalanan</h3>
+            <p>Langkah pertama menuju petualangan penuh makna.</p>
+        </div>
+        <div class="card">
+            <h3>Bab 2: Melintasi Batas</h3>
+            <p>Bagaimana menghadapi tantangan dan tumbuh dari pengalaman.</p>
+        </div>
+        <div class="card">
+            <h3>Bab 3: Mencapai Puncak</h3>
+            <p>Kisah keberhasilan dan pembelajaran sepanjang jalan.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 The Journey of Averoes. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/averoes_fsha/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
